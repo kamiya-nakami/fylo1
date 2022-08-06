@@ -1,0 +1,367 @@
+:root {
+--Very-Dark-Blue: hsl(243, 87%, 12%);
+--esaturated-Blue: hsl(238, 22%, 44%);
+--Bright-Blue: hsl(224, 93%, 58%);
+--Moderate-Cyan: hsl(170, 45%, 43%);
+--Light-Grayish-Blue: hsl(240, 75%, 98%);
+--Light-Gray: hsl(0, 0%, 75%);
+--white-color: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ui li {
+    list-style: none;
+}
+
+ ui li a {
+    text-decoration: none;
+    color: var(--esaturated-Blue);
+}
+
+/* ui li basic */
+header {
+    padding: 2rem ;
+}
+
+nav ui {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+nav ui li {
+    padding: 0 10%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav */
+
+.content {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: auto;
+
+}
+.container-Email {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr ) ;
+    margin: 4rem  0;
+    padding: 0 2rem;
+}
+
+.Email-content {
+    width: 80%;
+}
+.Email-content h1 {
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+}
+.Email-content p {
+    font-size: 1rem;
+    color: var(--esaturated-Blue);
+    margin: 1.5rem 0;
+}
+/* content */
+.email-input{
+    width: 17rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+.email-submit {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    background: var(--Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* font-email */
+.img {
+     grid-row:  span 2 / 1;
+     grid-column: 2;
+}
+.img img {
+    width: 80%;
+}
+.Stay {
+    background: url(/images/bg-curve-desktop.svg) no-repeat;   
+    padding-top: 7rem ;
+}
+.container-stay {
+    display: grid;
+    grid-template-columns: repeat(2, auto ) ;
+    grid-template-rows: repeat(2, auto ) ;
+    background-color: var(--Light-Grayish-Blue);
+    padding: 0 2rem;
+}
+.content-stay {
+    width: 74%;
+}
+.content-stay a {
+    font-size: 1.5rem;
+    color: var(--Moderate-Cyan);
+}
+
+.content-stay p {
+    margin: 1rem 0;
+}
+.nameBOX{
+    width: 50%;
+    padding: 3rem 1.5rem;
+    margin: 2rem 0;   
+    background: url(/images/icon-quotes.svg) no-repeat;
+    background-color: var(--white-color);
+    background-size: 2rem;
+    background-position: top 1vh left 4vh;
+    border-radius: .5rem;
+}   
+
+.name {
+    display: grid;
+    grid-template-columns: .3fr auto; ;
+    grid-template-rows: repeat(2, auto ) ;
+    margin-top: 2rem;
+}
+
+.name h2 {
+    font-size: 1rem;
+    color: var(--Very-Dark-Blue);
+}
+.name p {
+    font-size: .9rem;
+    color: var(--esaturated-Blue);
+}
+.name img {
+    width: 2rem;
+    border-radius: 100%;
+    grid-row: span 2/ 1;
+}
+.today {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr ) ;
+    background: var(--esaturated-Blue);
+    color: var(--white-color);
+    padding: 4rem;
+}
+.content-today {
+    width: 72%;
+}
+
+.content-today p {
+    color: var(--Light-Grayish-Blue);
+    margin: 1.5rem 0;
+}
+
+.today-input {
+    width: 80%;
+}
+.email-text {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: .1rem;
+    border: none;
+    padding:  1rem ;
+}
+.submit {
+    width: 14rem;
+    height: 2.5rem;
+    border-radius: .1rem;
+    margin-left: 1rem;
+    background: var(--Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-template-rows: repeat(2, 1fr ) ;
+    background: var(--Very-Dark-Blue);
+    color: var(--white-color);
+    height: auto;
+    padding: 5rem 4rem;
+}
+.logo1{
+    grid-column: span3 /1;
+    padding: 2rem 0;
+}
+.logo1 img {
+    filter: invert(1);
+}
+
+.Em-Ph {
+    display: grid;
+    grid-template-columns: repeat(2,.1fr);
+    gap: 1rem;
+}
+.Em-Ph span {
+    width: max-content;
+}
+
+footer ui  {
+    display: grid;
+    grid-template-columns: repeat(2, auto );
+    grid-template-rows: repeat(4, auto );
+    gap: 1rem;
+}
+
+footer  li a {
+    color: var(--Light-Grayish-Blue);
+}
+
+li a:hover {
+    color: var(--esaturated-Blue);
+    transition:  .2s ease-in-out;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.icon i {
+    font-size: 1.5rem;
+    color: var(--Light-Grayish-Blue);
+    border: .1rem solid var(--white-color);
+    border-radius: 100%;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.icon i:hover {
+    color: var(--Bright-Blue);
+    border-color:  var(--Bright-Blue);
+    transition:  .2s ease-in-out;
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container-Email {
+        grid-template-columns:  auto ;
+        grid-template-rows: repeat(2, auto ) ;
+        text-align: center;
+        padding: 0;
+    }
+    .Email-content {
+        width: 100%;
+    }
+    .img {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .img img{
+        width: 60%;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .email-submit {
+        margin-top: 2rem;
+    }
+
+
+    .container-stay {
+        grid-template-columns: auto  ;
+        grid-template-rows: repeat(3, auto ) ;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .content-stay {
+        width: 100%;
+        text-align: center;
+        padding: 0 10%;
+    }
+    .content-stay p {
+        text-align: start;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .nameBOX {
+        margin: 2rem auto;
+    }
+
+    .today {
+        grid-template-columns: auto ;
+        grid-template-rows: repeat(2, auto ) ;
+        text-align: center;
+    }
+    .content-today {
+        width: 100%;
+    }
+    .today-input {
+        width: 100%;
+    }
+    .email-text {
+        width: 50%;
+    }
+
+    .submit {
+        width: 50%;
+    }
+
+    footer {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+    }
+    .logo1 {
+        grid-column: 1;
+    }
+    .logo {
+        margin: 1rem 0;
+    }
+    footer ui {
+        grid-template-columns: auto;
+    }
+    .icon {
+        justify-content: center;
+    }
+    .icon i {
+        margin: 0 1rem;
+    }
+    .Contact{
+        margin-top: 2rem;
+    }
+
+    .Stay {
+        background: url(/images/bg-curve-mobile.svg) no-repeat;
+        background-size: 100%;
+        padding-top:  10%;
+    }
+    nav img {
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width: 475px) {
+    .icon {
+        margin-top: 2rem;
+    }
+
+
+}

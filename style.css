@@ -27,6 +27,11 @@ ui li {
     color: var(--esaturated-Blue);
 }
 
+li a:hover {
+    color: var(--esaturated-Blue);
+    transition:  .2s ease-in-out;
+}
+
 /* ui li basic */
 header {
     padding: 2rem ;
@@ -45,6 +50,9 @@ nav {
     justify-content: space-between;
 }
 
+nav img {
+    width: 80%;
+}
 /* nav */
 
 .content {
@@ -53,6 +61,7 @@ nav {
     grid-template-columns: auto;
 
 }
+
 .container-Email {
     display: grid;
     grid-template-columns: repeat(2, 1fr ) ;
@@ -72,6 +81,7 @@ nav {
     color: var(--esaturated-Blue);
     margin: 1.5rem 0;
 }
+
 /* content */
 .email-input{
     width: 17rem;
@@ -99,6 +109,7 @@ nav {
 .img img {
     width: 80%;
 }
+
 .Stay {
     background: url(/images/bg-curve-desktop.svg) no-repeat;   
     padding-top: 7rem ;
@@ -121,6 +132,7 @@ nav {
 .content-stay p {
     margin: 1rem 0;
 }
+/* stay */
 .nameBOX{
     width: 50%;
     padding: 3rem 1.5rem;
@@ -152,6 +164,8 @@ nav {
     border-radius: 100%;
     grid-row: span 2/ 1;
 }
+
+/* name */
 .today {
     display: grid;
     grid-template-columns: repeat(2, 1fr ) ;
@@ -171,6 +185,9 @@ nav {
 .today-input {
     width: 80%;
 }
+
+/* today */
+
 .email-text {
     width: 100%;
     height: 2.5rem;
@@ -191,6 +208,7 @@ nav {
     margin: 1rem 0;
 }
 
+/* submit-today */
 
 footer {
     display: grid;
@@ -201,6 +219,7 @@ footer {
     height: auto;
     padding: 5rem 4rem;
 }
+
 .logo1{
     grid-column: span3 /1;
     padding: 2rem 0;
@@ -208,7 +227,7 @@ footer {
 .logo1 img {
     filter: invert(1);
 }
-
+/* logo */
 .Em-Ph {
     display: grid;
     grid-template-columns: repeat(2,.1fr);
@@ -217,21 +236,17 @@ footer {
 .Em-Ph span {
     width: max-content;
 }
+/* icon-email-phone */
 
-footer ui  {
+.footer-menu ui  {
     display: grid;
     grid-template-columns: repeat(2, auto );
     grid-template-rows: repeat(4, auto );
     gap: 1rem;
 }
 
-footer  li a {
+.footer-menu  li a {
     color: var(--Light-Grayish-Blue);
-}
-
-li a:hover {
-    color: var(--esaturated-Blue);
-    transition:  .2s ease-in-out;
 }
 
 .icon {
@@ -255,24 +270,23 @@ li a:hover {
     transition:  .2s ease-in-out;
     
 }
-
+/* icon */
 
 @media only screen and (max-width: 768px) {
+    
+
+
+
     .container-Email {
         grid-template-columns:  auto ;
         grid-template-rows: repeat(2, auto ) ;
         text-align: center;
         padding: 0;
     }
-    .Email-content {
-        width: 100%;
-    }
+
     .img {
         grid-row: 1;
         grid-column: 1;
-    }
-    .img img{
-        width: 60%;
     }
 
     .email {
@@ -280,6 +294,8 @@ li a:hover {
         align-items: center;
         flex-direction: column;
     }
+
+
     .email-submit {
         margin-top: 2rem;
     }
@@ -311,6 +327,48 @@ li a:hover {
         grid-template-rows: repeat(2, auto ) ;
         text-align: center;
     }
+
+    footer {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .logo1 {
+        grid-column: 1;
+    }
+
+    .logo {
+        margin: 1rem 0;
+    }
+
+    footer ui {
+        grid-template-columns: auto;
+    }
+
+    .icon {
+        justify-content: center;
+    }
+
+    .icon i {
+        margin: 0 1rem;
+    }
+    .Contact{
+        margin-top: 2rem;
+    }
+
+    .Stay {
+        background: url(/images/bg-curve-mobile.svg) no-repeat;
+        background-size: 100%;
+        padding-top:  10%;
+    }
+    
+    .Email-content {
+        width: 100%;
+    }
+
+    .img img{
+        width: 60%;
+    }
     .content-today {
         width: 100%;
     }
@@ -324,38 +382,7 @@ li a:hover {
     .submit {
         width: 50%;
     }
-
-    footer {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(4, auto);
-    }
-    .logo1 {
-        grid-column: 1;
-    }
-    .logo {
-        margin: 1rem 0;
-    }
-    footer ui {
-        grid-template-columns: auto;
-    }
-    .icon {
-        justify-content: center;
-    }
-    .icon i {
-        margin: 0 1rem;
-    }
-    .Contact{
-        margin-top: 2rem;
-    }
-
-    .Stay {
-        background: url(/images/bg-curve-mobile.svg) no-repeat;
-        background-size: 100%;
-        padding-top:  10%;
-    }
-    nav img {
-        width: 80%;
-    }
+    
     
 }
 @media screen and (max-width: 475px) {

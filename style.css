@@ -220,11 +220,11 @@ footer {
     padding: 5rem 4rem;
 }
 
-.logo1{
+.logo-fylo{
     grid-column: span3 /1;
     padding: 2rem 0;
 }
-.logo1 img {
+.logo-fylo img {
     filter: invert(1);
 }
 /* logo */
@@ -333,7 +333,7 @@ footer {
         grid-template-rows: repeat(4, auto);
     }
 
-    .logo1 {
+    .logo-fylo {
         grid-column: 1;
     }
 
@@ -361,7 +361,7 @@ footer {
         background-size: 100%;
         padding-top:  10%;
     }
-    
+
     .Email-content {
         width: 100%;
     }
